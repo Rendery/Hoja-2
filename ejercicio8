@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{
+	int uno, dos, tres, aux;
+
+	cout << "Numero 1" << endl;
+	cin >>uno;
+	cout << "Numero 2" << endl;
+	cin >>dos;
+	cout << "Numero 3" << endl;
+	cin >>tres;
+	
+	if (tres > dos)
+		{
+			aux = tres;
+			tres = dos;
+			dos = aux;
+		}
+	else
+		if (dos > uno)
+		{
+			aux = dos;
+			dos = uno;
+			uno = aux;
+		}
+	
+	cout << uno << " -- " << dos << " -- " << tres;
+	_getch();
