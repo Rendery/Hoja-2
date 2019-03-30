@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int C, en_5, en_2, en_1;
+
+	cout << "escribe tu numero papu:  " << endl;
+	cin >> C;
+	en_5 = (C / 5);
+	en_2 = (C % 5) / 2;
+	en_1 = (C % 5) % 2;
+
+	cout << "Hay " << en_5 << " monedas de 5" << endl;
+	cout << "Hay " << en_2 << " monedas de 2" << endl;
+	cout << "Hay " << en_1 << " monedas de 1" << endl;
+
+	_getch();
+
+}
