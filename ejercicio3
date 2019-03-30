@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{
+	int horas, minutos, segundos;
+
+	cout << "Horas: " << endl;
+	cin >> horas;
+	cout << "Minutos: " << endl;
+	cin >> minutos;
+	cout << "Segundos: " << endl;
+	cin >> segundos;
+
+	segundos = segundos++;
+	if (segundos > 59)
+	{
+		minutos++;
+		segundos = 0;
+	}
+	if (minutos > 59)
+	{
+		horas++;
+		minutos = 0;
+	}
+
+	cout << horas << " : " << minutos << " : " << segundos;
+
+		_getch();
+}
